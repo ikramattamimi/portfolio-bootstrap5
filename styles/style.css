@@ -76,7 +76,7 @@ section .section-title {
 }
 
 .header-section .header-skill {
-    /* color: var(--dark-color); */
+    color: var(--dark-color);
 }
 
 .header-section .header-skill:hover {
