@@ -1,5 +1,9 @@
 # Portfolio website using bootstrap 5
 
+<p align="center">
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/ikramattamimi/portfolio-bootstrap5/blob/main/README.md)
+</p>
+
 This is my personal portfolio project, built using Bootstrap 5. This portfolio contains information about me, projects I've completed, and ways to contact me. 
 The starter template i use is by following Youtube tutorial by Yunus Almeide [here](https://youtu.be/4TEtR_HvCZk?si=KcZyzLFadKcnyCDw).
 
