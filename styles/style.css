@@ -4,7 +4,7 @@
 /* VARIABLES */
 :root{
     /* --primary-color: #FB6A27; */
-    --primary-color: #369eed;
+    --primary-color: #ff0000;
     --dark-color: #0F0F0F;
     --gray-color: gray;
 
@@ -40,12 +40,12 @@ section .section-title {
     text-transform: uppercase;
 }
 
-.btn-orange {
+.btn-red {
     background-color: var(--primary-color);
     color: white;
 }
 
-.text-orange {
+.text-red {
     color: var(--primary-color);
 }
 
@@ -60,6 +60,10 @@ section .section-title {
 .form-control:focus {
     box-shadow: none;
     border-color: var(--primary-color);
+}
+
+.bg-purple, .card, .modal-content {
+    background-color: #181624;
 }
 
 /* SECTION STYLES */
@@ -108,7 +112,11 @@ section .section-title {
     }
 }
 
+.jayandra-img {
+    max-height: 75vh;
+}
+
 /* TECHSTACK */
 .techstack-section, footer {
-    background-color: #030303;
+    background-color: #14131e;
 }
