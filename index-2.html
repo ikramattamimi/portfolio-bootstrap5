@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ikram's Portfolio</title>
+    <link rel="icon" href="https://laravel.com/img/logomark.min.svg">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body class="bg-purple">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg sticky-top bg-purple">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-red" href="/">Ikram</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#techstack">Techstack</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <section id="header" class="header-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-red fw-semibold">Halo!</p>
+                    <h2 class="header-title fw-bold">
+                        Saya <span class="text-red">Ikram Muhammad</span>
+                    </h2>
+                    <h3 class="fw-bold">
+                        Saya adalah seorang <span class="text-red">Web Developer & Mobile Developer</span>
+                    </h3>
+
+                    <p>
+                        with expertise in the PHP programming language and experience
+                        with the Laravel Framework. I am used to building MVC application using
+                        Laravel and Bootstrap. I have also used other technologies such as
+                        Laravel Livewire, Inertia.js with Vue.js, CodeIgniter 4 and Flutter.
+                    </p>
+
+                </div>
+                <div class="col-md-6">
+                    <img src="images/header-image-purple.png" alt="header image" class="header-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio-section" id="portfolio">
+        <div class="container">
+            <p class="text-red fw-semibold">Portfolio</p>
+            <h2 class="section-title">completed projects</h2>
+
+            <p class="mb-5">
+                These are the projects that I have completed, most of which I obtained as a
+                freelance web developer. In my freelance work, I've had the opportunity to
+                collaborate with a variety of clients, helping me gain a diverse skill set in web
+                development. Additionally, my experience in mobile development comes from working on
+                my final project using Flutter. It was a significant learning experience, allowing
+                me to delve into mobile app development, which I found to be both challenging and
+                rewarding. I look forward to further expanding my expertise in both web and mobile
+                development in the future.
+            </p>
+
+            <div class="swiper portfolio-swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <button type="button" class="btn" data-bs-toggle="modal"
+                            data-bs-target="#trashcleanModal">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="images/trashclean/1.png" alt="portfolio image"
+                                        srcset="" class="img-fluid rounded mb-3">
+                                    <h6 class="fw-semibold">Trashclean</h6>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <button type="button" class="btn" data-bs-toggle="modal"
+                            data-bs-target="#salaryPaymentModal">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="images/salary-payment/1.png" alt="portfolio image"
+                                        srcset="" class="img-fluid rounded mb-3">
+                                    <h6 class="fw-semibold">Salary Payment</h6>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <button type="button" class="btn" data-bs-toggle="modal"
+                            data-bs-target="#accountingAppModal">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="images/accounting/3.png" alt="portfolio image"
+                                        srcset="" class="img-fluid rounded mb-3">
+                                    <h6 class="fw-semibold">Accounting App</h6>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <button type="button" class="btn" data-bs-toggle="modal"
+                            data-bs-target="#collegeFinalProjectModal">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="images/jayandra/1.png" alt="portfolio image" srcset=""
+                                        class="img-fluid rounded mb-3" style="max-height: 128px;">
+                                    <h6 class="fw-semibold">College Final Project</h6>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-end gap-3 mt-3">
+                <button class="btn btn-secondary d-flex align-items-center justify-content-center"
+                    id="swiper-button-prev">
+                    <i class="bx bx-left-arrow-alt fs-5"></i>
+                </button>
+                <button class="btn btn-secondary d-flex align-items-center justify-content-center"
+                    id="swiper-button-next">
+                    <i class="bx bx-right-arrow-alt fs-5"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="trashcleanModal" tabindex="-1"
+        aria-labelledby="trashcleanModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="trashcleanModalLabel">Trashclean</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="p-3">
+                        <!-- PROJECT SCREENSHOTS -->
+                        <div class="swiper modal-image-swiper">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <img src="images/trashclean/1.png" alt="portfolio image"
+                                        srcset="" class="img-fluid rounded mb-3">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/trashclean/9.png" alt="portfolio image"
+                                        srcset="" class="img-fluid rounded mb-3">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/trashclean/2.png" alt="portfolio image"
+                                        srcset="" class="img-fluid rounded mb-3">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/trashclean/3.png" alt="portfolio image"
+                                        srcset="" class="img-fluid rounded mb-3">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/trashclean/4.png" alt="portfolio image"
+                                        srcset="" class="img-fluid rounded mb-3">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/trashclean/5.png" alt="portfolio image"
+                                        srcset="" class="img-fluid rounded mb-3">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/trashclean/6.png" alt="portfolio image"
+                                        srcset="" class="img-fluid rounded mb-3">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/trashclean/7.png" alt="portfolio image"
+                                        srcset="" class="img-fluid rounded mb-3">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/trashclean/8.png" alt="portfolio image"
+                                        srcset="" class="img-fluid rounded mb-3">
+                                </div>
+
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination "></div>
+                        </div>
+
+                        <!-- PROJECT DESCRIPTION -->
+                        <div>
+                            <h6>Description</h6>
+                            <p>
+                                Website that aims to manage waste collection activities in a
+                                village. This website is designed to provide two different usage
+                                schemes. The first scheme is for users who do not need to log in,
+                                who can access the company profile, blog, information and tutorial
+                                views. The second scheme is for users who require authentication,
+                                including citizen, admin, and super admin users.
+                                The content in this website including home, about, catalog, contact,
+                                and blog is customable and can be managed by the super admin.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="salaryPaymentModal" tabindex="-1"
+        aria-labelledby="salaryPaymentModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="salaryPaymentModalLabel">Salary Payment</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="p-3">
+                        <!-- PROJECT SCREENSHOTS -->
+                        <div class="swiper modal-image-swiper">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <img src="images/salary-payment/1.png" alt="portfolio image"
+                                        srcset="" class="img-fluid rounded mb-3">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/salary-payment/2.png" alt="portfolio image"
+                                        srcset="" class="img-fluid rounded mb-3">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/salary-payment/3.png" alt="portfolio image"
+                                        srcset="" class="img-fluid rounded mb-3">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/salary-payment/4.png" alt="portfolio image"
+                                        srcset="" class="img-fluid rounded mb-3">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/salary-payment/5.png" alt="portfolio image"
+                                        srcset="" class="img-fluid rounded mb-3">
+                                </div>
+
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination "></div>
+                        </div>
+
+                        <!-- PROJECT DESCRIPTION -->
+                        <div>
+                            <h6>Description</h6>
+                            <p>
+                                A website whose main objective is to facilitate the process of
+                                sending salary slips
+                                via email. This application allows users to send pay slips to a
+                                number of employees easily, by
+                                uploading an excel file containing the data needed to make pay
+                                slips.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="accountingAppModal" tabindex="-1"
+        aria-labelledby="accountingAppModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="accountingAppModalLabel">Accounting App</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="p-3">
+                        <!-- PROJECT SCREENSHOTS -->
+                        <div class="swiper modal-image-swiper">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <img src="images/accounting/0.png" alt="portfolio image"
+                                        srcset="" class="img-fluid rounded mb-3">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/accounting/1.png" alt="portfolio image"
+                                        srcset="" class="img-fluid rounded mb-3">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/accounting/2.png" alt="portfolio image"
+                                        srcset="" class="img-fluid rounded mb-3">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/accounting/3.png" alt="portfolio image"
+                                        srcset="" class="img-fluid rounded mb-3">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/accounting/4.png" alt="portfolio image"
+                                        srcset="" class="img-fluid rounded mb-3">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/accounting/5.png" alt="portfolio image"
+                                        srcset="" class="img-fluid rounded mb-3">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/accounting/6.png" alt="portfolio image"
+                                        srcset="" class="img-fluid rounded mb-3">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/accounting/7.png" alt="portfolio image"
+                                        srcset="" class="img-fluid rounded mb-3">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/accounting/8.png" alt="portfolio image"
+                                        srcset="" class="img-fluid rounded mb-3">
+                                </div>
+
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination "></div>
+                        </div>
+
+                        <!-- PROJECT DESCRIPTION -->
+                        <div>
+                            <h6>Description</h6>
+                            <p>
+                                Website that aims to manage transactions within the Prakasa Hutama
+                                company,
+                                which operates in the trade sector. This website is designed to
+                                increase the company's
+                                operational efficiency and effectiveness in managing its business
+                                transactions
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="collegeFinalProjectModal" tabindex="-1"
+        aria-labelledby="collegeFinalProjectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="collegeFinalProjectModalLabel">College Final
+                        Project</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="p-3">
+                        <!-- PROJECT SCREENSHOTS -->
+                        <div class="swiper modal-image-swiper">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide text-center">
+                                    <img src="images/jayandra/1.png" alt="portfolio image" srcset=""
+                                        class="img-fluid rounded mb-3 jayandra-img">
+                                </div>
+                                <div class="swiper-slide text-center">
+                                    <img src="images/jayandra/2.png" alt="portfolio image" srcset=""
+                                        class="img-fluid rounded mb-3 jayandra-img">
+                                </div>
+                                <div class="swiper-slide text-center">
+                                    <img src="images/jayandra/3.png" alt="portfolio image" srcset=""
+                                        class="img-fluid rounded mb-3 jayandra-img">
+                                </div>
+                                <div class="swiper-slide text-center">
+                                    <img src="images/jayandra/4.png" alt="portfolio image" srcset=""
+                                        class="img-fluid rounded mb-3 jayandra-img">
+                                </div>
+                                <div class="swiper-slide text-center">
+                                    <img src="images/jayandra/5.png" alt="portfolio image" srcset=""
+                                        class="img-fluid rounded mb-3 jayandra-img">
+                                </div>
+                                <div class="swiper-slide text-center">
+                                    <img src="images/jayandra/6.png" alt="portfolio image" srcset=""
+                                        class="img-fluid rounded mb-3 jayandra-img">
+                                </div>
+                                <div class="swiper-slide text-center">
+                                    <img src="images/jayandra/7.png" alt="portfolio image" srcset=""
+                                        class="img-fluid rounded mb-3 jayandra-img">
+                                </div>
+                                <div class="swiper-slide text-center">
+                                    <img src="images/jayandra/8.png" alt="portfolio image" srcset=""
+                                        class="img-fluid rounded mb-3 jayandra-img">
+                                </div>
+                                <div class="swiper-slide text-center">
+                                    <img src="images/jayandra/9.png" alt="portfolio image" srcset=""
+                                        class="img-fluid rounded mb-3 jayandra-img">
+                                </div>
+
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination "></div>
+                        </div>
+
+                        <!-- PROJECT DESCRIPTION -->
+                        <div>
+                            <h6>Description</h6>
+                            <p>
+                                An application that connects with specific electric plug through the
+                                MQTT protocol, enabling the
+                                application to manage the active or inactive status data, as well as
+                                to oversee the electricity
+                                usage data from each electric plug.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TECHSTACK -->
+    <section class="techstack-section" id="techstack">
+        <div class="container">
+            <p class="text-red fw-semibold">Techstack</p>
+            <h2 class="section-title mb-5">Technology Used</h2>
+            <div class="row align-items-center justify-content-center">
+                <div class="col">
+                    <img class="w-8 h-8 shrink-0 transition-all duration-300 lg:w-12 lg:h-12"
+                        src="https://laravel.com/img/logomark.min.svg" alt="Laravel" width="50"
+                        height="52">
+                    <img src="https://laravel.com/img/logotype.min.svg" alt="Laravel"
+                        class="hidden ml-4 lg:block" width="114" height="29">
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png"
+                        height="52" alt="Bootstrap" class="">
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <svg width="159" height="30" viewBox="0 0 159 30" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M54.76 23V9h3.4v11h6.24v3h-9.64Zm11.508 0v-2.86h2.36v-8.28h-2.36V9h8.14v2.86h-2.38v8.28h2.38V23h-8.14Zm14.893 0-5.6-14h3.54l2.7 7.14c.16.413.294.773.4 1.08.12.307.22.593.3.86.094.267.174.54.24.82.08.267.167.573.26.92h-.62a20.93 20.93 0 0 1 .68-2.3c.134-.387.3-.847.5-1.38l2.6-7.14h3.48l-5.64 14h-2.84Zm9.918 0V9h9.761v2.9h-6.46v8.2h6.66V23h-9.96Zm1.6-5.74V14.5h7.26v2.76h-7.26ZM106.09 23l-4.2-14h3.46l2.1 7.36c.093.333.173.673.24 1.02.08.333.14.653.18.96.053.307.093.593.12.86.027.253.053.467.08.64h-.44c.08-.493.147-.933.2-1.32.067-.387.14-.747.22-1.08.08-.347.18-.707.3-1.08l2.08-5.54h2.72l2.04 5.54c.16.44.293.853.4 1.24.107.387.187.76.24 1.12.067.347.12.693.16 1.04l-.4.06c.027-.24.047-.46.06-.66.013-.213.027-.413.04-.6.027-.2.053-.407.08-.62.027-.213.067-.447.12-.7.053-.267.127-.567.22-.9L118.19 9h3.38l-4.2 14h-2.6l-3.32-8.06.38.04-3.06 8.02h-2.68Zm16.663 0v-2.86h2.36v-8.28h-2.36V9h8.14v2.86h-2.38v8.28h2.38V23h-8.14Zm10.974 0V9h6.3c.894 0 1.7.193 2.42.58.734.387 1.307.92 1.72 1.6.414.667.62 1.427.62 2.28 0 .88-.206 1.673-.62 2.38a4.463 4.463 0 0 1-1.7 1.64c-.72.4-1.533.6-2.44.6h-3.06V23h-3.24Zm7.76 0-3.56-6.32 3.48-.5 3.96 6.82h-3.88Zm-4.52-7.52h2.76c.347 0 .647-.073.9-.22.267-.16.467-.38.6-.66.147-.28.22-.6.22-.96s-.08-.673-.24-.94a1.555 1.555 0 0 0-.7-.64c-.293-.147-.653-.22-1.08-.22h-2.46v3.64ZM147.37 23V9h9.76v2.9h-6.46v8.2h6.66V23h-9.96Zm1.6-5.74V14.5h7.26v2.76h-7.26Z"
+                            fill="#F1F5F9"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M34.8 27.706C34.12 28.734 33.605 30 32.223 30c-2.326 0-2.452-3.587-4.78-3.587-2.327 0-2.201 3.587-4.527 3.587s-2.452-3.587-4.78-3.587c-2.327 0-2.201 3.587-4.528 3.587-2.326 0-2.452-3.587-4.78-3.587C6.5 26.413 6.628 30 4.3 30c-.731 0-1.245-.354-1.678-.84A19.866 19.866 0 0 1 0 19.24C0 8.613 8.208 0 18.333 0 28.46 0 36.667 8.614 36.667 19.24c0 3.037-.671 5.91-1.866 8.466Z"
+                            fill="#FB70A9"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M34.8 27.706C34.12 28.734 33.605 30 32.223 30c-2.326 0-2.452-3.587-4.78-3.587-2.327 0-2.201 3.587-4.527 3.587s-2.452-3.587-4.78-3.587c-2.327 0-2.201 3.587-4.528 3.587-2.326 0-2.452-3.587-4.78-3.587C6.5 26.413 6.628 30 4.3 30c-.731 0-1.245-.354-1.678-.84A19.866 19.866 0 0 1 0 19.24C0 8.613 8.208 0 18.333 0 28.46 0 36.667 8.614 36.667 19.24c0 3.037-.671 5.91-1.866 8.466Z"
+                            fill="#FB70A9"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M30.834 29.617c4.804-7.147 4.929-15.075.372-23.784a19.19 19.19 0 0 1 5.461 13.447c0 3.026-.695 5.89-1.934 8.434C34.028 28.738 33.493 30 32.06 30c-.49 0-.886-.148-1.226-.383Z"
+                            fill="#E24CA6"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M17.35 24.038c6.376 0 9.06-3.698 9.06-8.95C26.41 9.834 22.355 5 17.35 5c-5.003 0-9.059 4.835-9.059 10.087 0 5.253 2.684 8.951 9.06 8.951Z"
+                            fill="#fff"></path>
+                        <path
+                            d="M14.915 15.385c1.876 0 3.397-1.68 3.397-3.75 0-2.071-1.52-3.75-3.397-3.75-1.876 0-3.397 1.679-3.397 3.75 0 2.07 1.52 3.75 3.397 3.75Z"
+                            fill="#030776"></path>
+                        <path
+                            d="M14.35 12.5c.937 0 1.698-.775 1.698-1.73 0-.957-.76-1.731-1.699-1.731-.938 0-1.699.774-1.699 1.73s.76 1.731 1.7 1.731Z"
+                            fill="#fff"></path>
+                    </svg>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <svg class="block fill-current" viewBox="0 0 275.3 50.5"
+                        style="height: 25px; fill:white;">
+                        <path d="M231.2 16.1h-17.8l17.2 17.2-17.2 17.2h17.8l17.2-17.2z"></path>
+                        <path d="M258.1 16.1h-17.8l17.2 17.2-17.2 17.2h17.8l17.2-17.2z"></path>
+                        <path
+                            d="M6 15.3h10.3l-6 34.2H0l6-34.2zm.6-9.1C7.2 2.9 10.3 0 13.7 0s5.7 2.8 5.2 6.2c-.5 3.4-3.7 6.2-7.2 6.2s-5.6-3-5.1-6.2zM54.3 28.5l-3.7 21H40.4L43.8 30c.8-4.4-1.6-6.2-4.9-6.2-3.4 0-6.5 2-7.5 6.6L28 49.5H17.8l6-34.2h10.3l-.5 3.2c2.3-2.6 6.2-4.2 10.1-4.2 6.9.1 12.2 5.1 10.6 14.2zM94.5 32.4c-.1.8-.5 2.7-1.1 4.1H68.9c.6 3.8 3.8 4.8 7 4.8 2.9 0 5.2-.8 7.2-2.7l7.2 5.9c-4 4-8.7 6-15 6-11.8 0-18-8.5-16.3-18.7a20.7 20.7 0 0 1 20.5-17.4c9.8 0 16.9 7.6 15 18zm-9.7-3.7c-.3-3.8-3-5.3-6.2-5.3a8.9 8.9 0 0 0-8.3 5.3h14.5zM123.9 14.6l-2 11.6c-4-.6-10.5.8-11.7 7.8l.1-.4-2.8 15.9H97.3l6-34.2h10.3l-1.1 6.2c2.1-4.7 6.6-6.9 11.4-6.9zM137.8 37.3c-.5 3.1 2 3.3 6.6 2.9l-1.6 9.3c-12.3 1.4-16.9-2.7-15.2-12.2l2.1-12.1h-5.5l1.8-9.9h5.4l1.2-6.5 10.8-3.1-1.7 9.6h7.1l-1.8 9.9h-7l-2.2 12.1zM155.3 15.3h10.3l-6 34.2h-10.3l6-34.2zm.6-9.1c.5-3.3 3.7-6.2 7.1-6.2s5.7 2.8 5.2 6.2c-.5 3.4-3.7 6.2-7.2 6.2s-5.7-3-5.1-6.2zM208.1 15.3l-6 34.2h-10.3l.4-2.3a15.5 15.5 0 0 1-10.3 3.3c-11.1 0-15.3-9.6-13.5-18.9 1.6-8.8 8.6-17.2 19.2-17.2 4.5 0 7.7 1.8 9.6 4.6l.6-3.6h10.3zm-13.2 17.2c.9-5.2-1.9-8.4-6.6-8.4a9.5 9.5 0 0 0-9.5 8.3c-.9 5.1 1.8 8.3 6.6 8.3 4.6.1 8.6-3.1 9.5-8.2z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <img src="https://codeigniter.com/assets/icons/ci-logo.png" height="52">
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <img src="https://storage.googleapis.com/cms-storage-bucket/ec64036b4eacc9f3fd73.svg"
+                        alt="Flutter">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-6">
+                    <p class="text-red fw-smibold">Contact</p>
+                    <h2 class="section-title mb-5">
+                        get in touch
+                    </h2>
+                    <p class="text-secondary mb-3">
+                        Contact me here
+                    </p>
+
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <i class="bx bx-map-pin text-red fs-5"></i>
+                        <div class="mb-0 text-white">Bandung, Indonesia</div>
+                    </div>
+                    <a href="https://wa.me/+6287852431607" target="_blank">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <i class="fa-brands fa-whatsapp text-red fs-5"></i>
+                            <div class="mb-0 text-white">+62 878 5243 1607</div>
+                        </div>
+                    </a>
+                    <a href="mailto:attamimiikram@gmail.com" target="_blank">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <i class="bx bx-envelope text-red fs-5"></i>
+                            <div class="mb-0 text-white">attamimiikram@gmail.com</div>
+                        </div>
+                    </a>
+                    <a href="https://linkedin.com/in/ikram-attamimi" target="_blank">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <i class="fa-brands fa-linkedin text-red fs-5"></i>
+                            <div class="mb-0 text-white">ikram-attamimi</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-3">
+        <div class="container">
+            <p class="text-white fs-7 mb-0">
+                Copyright &copy; 2023 Ikram Muhammad Bukhori Attamimi. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
