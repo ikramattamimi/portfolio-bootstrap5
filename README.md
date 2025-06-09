@@ -6,7 +6,7 @@ This is my personal portfolio project, built using Bootstrap 5. This portfolio c
 The starter template i use is by following Youtube tutorial by Yunus Almeide [here](https://youtu.be/4TEtR_HvCZk?si=KcZyzLFadKcnyCDw).
 
 ## Demo
-You can view the live version of this portfolio here: [Demo Link](https://example-demo-link.com)
+You can view the live version of this portfolio here: [Demo Link](https://ikramattamimi.github.io/portfolio-bootstrap5/)
 
 ## Key Features
 - Responsive design optimized for various device sizes.
