@@ -1,4 +1,4 @@
-new Swiper(".portfolio-swiper", {
+new Swiper(".project-swiper", {
     slidesPerView: 3,
     spaceBetween: 30,
     navigation: {
