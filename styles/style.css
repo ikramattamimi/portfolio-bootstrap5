@@ -622,3 +622,259 @@ section .section-title {
         font-size: 18px;
     }
 }
+
+/* CONTACT SECTION */
+.contact-section {
+    padding: 70px 0;
+}
+
+.contact-subtitle {
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+/* Contact Cards */
+.contact-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-card {
+    background: #14131e;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-card:not(.static) {
+    cursor: pointer;
+}
+
+.contact-card:not(.static):hover {
+    background: rgba(255, 0, 0, 0.05);
+    border-color: var(--primary-color);
+    transform: translateX(8px);
+}
+
+.contact-card:not(.static):hover .arrow-icon {
+    transform: translateX(5px);
+    opacity: 1;
+}
+
+.contact-icon-wrapper {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background: rgba(255, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.contact-card:not(.static):hover .contact-icon-wrapper {
+    background: var(--primary-color);
+    transform: scale(1.1);
+}
+
+.contact-icon {
+    font-size: 24px;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+.contact-card:not(.static):hover .contact-icon {
+    color: white;
+}
+
+.contact-details {
+    flex: 1;
+}
+
+.contact-label {
+    color: #888;
+    font-size: 13px;
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+
+.contact-value {
+    color: white;
+    font-size: 16px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.arrow-icon {
+    font-size: 24px;
+    color: var(--primary-color);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+/* Social Media Section */
+.social-wrapper {
+    height: 100%;
+}
+
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.social-card {
+    background: #14131e;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--primary-color);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.social-card:hover::before {
+    transform: scaleX(1);
+}
+
+.social-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+}
+
+.social-icon {
+    font-size: 42px;
+    margin-bottom: 12px;
+    transition: all 0.3s ease;
+}
+
+.social-name {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.social-handle {
+    color: #888;
+    font-size: 13px;
+    display: block;
+}
+
+/* Social Brand Colors */
+.social-card.linkedin:hover {
+    background: rgba(10, 102, 194, 0.1);
+}
+
+.social-card.linkedin .social-icon {
+    color: #0A66C2;
+}
+
+.social-card.github:hover {
+    background: rgba(36, 41, 47, 0.3);
+}
+
+.social-card.github .social-icon {
+    color: #ffffff;
+}
+
+.social-card.instagram:hover {
+    background: linear-gradient(45deg, rgba(131, 58, 180, 0.1), rgba(253, 29, 29, 0.1), rgba(252, 176, 69, 0.1));
+}
+
+.social-card.instagram .social-icon {
+    color: #E4405F;
+}
+
+.social-card.whatsapp:hover {
+    background: rgba(37, 211, 102, 0.1);
+}
+
+.social-card.whatsapp .social-icon {
+    color: #25D366;
+}
+
+/* CTA Button */
+.cta-section {
+    text-align: center;
+}
+
+.btn-cta {
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 0, 0, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .social-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-card {
+        padding: 16px;
+    }
+
+    .contact-icon-wrapper {
+        width: 45px;
+        height: 45px;
+    }
+
+    .contact-icon {
+        font-size: 20px;
+    }
+
+    .social-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .social-card {
+        padding: 20px;
+    }
+
+    .social-icon {
+        font-size: 36px;
+    }
+}
+
