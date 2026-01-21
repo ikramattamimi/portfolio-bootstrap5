@@ -15,7 +15,7 @@ new Swiper(".project-swiper", {
             spaceBetween: 20,
         },
         1024: {
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween: 50,
         },
     },
